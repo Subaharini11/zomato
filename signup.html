@@ -1,0 +1,56 @@
+<html>
+    <title>signup</title>
+    <style>
+        body{
+            margin:520px;
+            border:2px double black;
+        }
+        button{
+            background-color: gray;
+            border: none;
+            color:white;
+            padding:15px 32px;
+            text-decoration: none;
+            cursor:pointer;
+        }
+        center{
+            margin:auto;
+            width=20%;
+            border:3px solid rgb(red, green, blue);
+            padding:10px;
+        }
+    </style>
+    <body>
+        <div class="center">
+            <center><h1><b>Sign up</b></h1></center>
+            <center>name<input type="text"name="full name"placeholder="full name"</center><br>
+            <center>Email<input type="text"name="Email"placeholder="Email" </center><br>
+            <center><input type="checkbox"><label>I agree to Zomato's<b>Teams of Service.Privacy policy</b></center>
+                <center>and<b>Content Policies</b></label><br></center>
+            <br><center><a class="active"
+            href="file:///C:/Users/KEERTHANA/Music/spotknack/login/login.html"><button on click="validate()">Create account</button></a></center>
+            <center><p>or</p></center>
+            <center><input type="button" value="Continue with Google"</center><br>
+            <center><p>Already have an account?</p>
+            <a class="active"
+        href="file:///C:/Users/KEERTHANA/Music/spotknack/login/login.html">Log in</a></center><br>
+        </div>
+        <script>
+            function validate()
+            {
+                var name=document.my form.name.value;
+                var Email=document.my form.Email.value;
+                if(name==""||name==null){
+                    alert("Enter a valid name");
+                }
+                if(Email!=@&&y==Email.length<=7)
+                {
+                    alert("Not a valid mail id")
+                }
+                if(document.my form.checkbox.value.checked==false){
+                    alert("accept the terms or go back")
+                }
+            }
+        </script>
+    </body>
+</html>
